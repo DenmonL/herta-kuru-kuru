@@ -6,6 +6,8 @@ body {
     /* height: 100vh; */
     overflow-x: hidden;
     color: white;
+    /* padding-bottom: 0; */
+    margin-bottom: 0;
 }
 
 p {
