@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     color: white;
     /* padding-bottom: 0; */
-    margin-bottom: 0;
+    margin: 0;
 }
 
 p {
@@ -27,8 +27,20 @@ h1 {
     margin: auto;
     text-align: center;
 }
-.br {
+
+.counter {
+    position: relative;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
     height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #574f84;
 }
 
 .footer {

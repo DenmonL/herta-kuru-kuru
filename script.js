@@ -2,14 +2,28 @@ const audio = new Audio();
 
 let summonBtn = document.querySelector('#summon');
 let canvas = document.querySelector('#canvas');
+let ctr = document.querySelector('#counter');
 
+let firstClick = true;
+let count = 0;
+
+function counter() {
+    if (firstClick) {
+        firstClick = false;
+    }
+    count++;
+    ctr.innerHTML = count;
+}
 summonBtn.addEventListener('mousedown', function () {
+
+    counter();
+
     let kuru = document.createElement('img');
     let sound = document.createElement('audio');
 
     sound.src = "src/kuru-kuru.mp3";
     sound.type = "audio/mpeg";
-    
+
     audio.appendChild(sound);
     sound.play();
 
@@ -39,6 +53,6 @@ summonBtn.addEventListener('mousedown', function () {
     }
 });
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function () {
     window.resizeTo(screen.width, screen.height)
 })
