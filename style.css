@@ -22,7 +22,7 @@ h1 {
     position: relative;
     padding-top: 10px;
     /* height: 70vh; */
-    width: 90%;
+    width: 100%;
     display: block;
     /* border: 2px solid black; */
     margin: auto;
@@ -65,7 +65,7 @@ h1 {
 }
 #canvas {
     text-align: left;
-    height: 40vh;
+    height: 60vh;
     /* border: 2px solid black; */
     margin: 20px 0px;
 }
